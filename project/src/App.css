@@ -11,28 +11,4 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.header {
-  display: flex;
-  grid-area: h;
-  color: rgb(230, 84, 84);
-  font-size: 2.2em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #223d58;
-  line-height: 1.2;
-}
 
-.header img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin: 15px 20px;
-  margin-right: 410px;
-}
-.nav {
-  grid-area: n;
-  background-color: #556b81;
-}
-.content {
-  grid-area: c;
-  background-color: #f0b4b4;
-}
