@@ -8,8 +8,8 @@ const MyPosts = () => {
     <div className={classes.posts}>
       <h3 className={classes.title_posts}>My Posts</h3>
       <NewPost />
-      <Post message ="Hello, how are you?"/>
-      <Post message="I'm fine thank's, and you?" />
+      <Post message ="Hello, how are you?" likes= "100"/>
+      <Post message="I'm fine thank's, and you?"  likes ="200"/>
     </div>
   );
 };
