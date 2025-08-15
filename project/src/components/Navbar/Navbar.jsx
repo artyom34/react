@@ -6,19 +6,44 @@ let Navbar = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.item}>
-        <NavLink to="/profile">Profile</NavLink>
-      </div>
-      <div className={`${classes.item} ${classes.active}`}>
-        <NavLink to="/dialogs">Messages</NavLink>
-      </div>
-      <div className={classes.item}>
-        <NavLink to="/news">News</NavLink>
-      </div>
-      <div className={classes.item}>
-        <NavLink to="/music">Music</NavLink>
+        <NavLink
+          to="/profile"
+          className={({ isActive }) => (isActive ? classes.activeLink : "")}
+        >
+          Profile
+        </NavLink>
       </div>
       <div className={classes.item}>
-        <NavLink to="/settings">Settings</NavLink>
+        <NavLink
+          to="/dialogs"
+          className={({ isActive }) => (isActive ? classes.activeLink : "")}
+        >
+          Messages
+        </NavLink>
+      </div>
+      <div className={classes.item}>
+        <NavLink
+          to="/news"
+          className={({ isActive }) => (isActive ? classes.activeLink : "")}
+        >
+          News
+        </NavLink>
+      </div>
+      <div className={classes.item}>
+        <NavLink
+          to="/music"
+          className={({ isActive }) => (isActive ? classes.activeLink : "")}
+        >
+          Music
+        </NavLink>
+      </div>
+      <div className={classes.item}>
+        <NavLink
+          to="/settings"
+          className={({ isActive }) => (isActive ? classes.activeLink : "")}
+        >
+          Settings
+        </NavLink>
       </div>
     </nav>
   );
