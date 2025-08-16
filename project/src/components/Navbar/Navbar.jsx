@@ -18,7 +18,7 @@ let Navbar = () => {
           to="/dialogs"
           className={({ isActive }) => (isActive ? classes.activeLink : "")}
         >
-          Messages
+          Dialogs
         </NavLink>
       </div>
       <div className={classes.item}>
