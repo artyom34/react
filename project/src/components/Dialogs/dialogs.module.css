@@ -11,6 +11,10 @@
     padding-bottom: 10px;
     
 }
+.dialogsItems .dialog a {
+    text-decoration: none;
+    color: #000;
+}
 .dialogsItems .active {
     font-weight: bold;
     color: #6e5911;
