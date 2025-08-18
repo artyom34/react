@@ -1,27 +1,11 @@
-.dialogs{
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    padding: 20px;
+.dialogs {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  padding: 20px;
 }
-.dialogsItems{
-    border-right: 2px solid #8b8a8a;
-}
-
-.dialogsItems .dialog {
-    padding-bottom: 10px;
-    
-}
-.dialogsItems .dialog a {
-    text-decoration: none;
-    color: #000;
-}
-.dialogsItems .active {
-    font-weight: bold;
-    color: #6e5911;
+.dialogsItems {
+  border-right: 2px solid #8b8a8a;
 }
 .messages {
-    padding-left: 20px;
-}
-.messages .message {
-    padding-bottom: 10px;
+  padding-left: 20px;
 }
