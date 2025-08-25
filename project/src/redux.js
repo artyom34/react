@@ -5,6 +5,7 @@ let data = {
       { id: 2, message: "I'm fine thank's, and you?", likes: "200" },
     ],
   },
+
   dialogsData: {
     users: [
       { id: 1, name: "Lidiya" },
