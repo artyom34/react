@@ -4,12 +4,13 @@ import ImageContent from "./ImageContent/ImageContent";
 import Descriptions from "./Descriptions/Descriptions";
 import MyPosts from "./MyPosts/MyPosts";
 
-const Profile = () => {
+
+const Profile = (props) => {
   return (
     <div className={classes.content}>
       <ImageContent />
       <Descriptions />
-      <MyPosts />
+      <MyPosts message = {props.messages}/>
     </div>
   );
 };
