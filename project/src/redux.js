@@ -1,4 +1,4 @@
-let data = {
+let state = {
   postsData: {
     posts: [
       { id: 1, message: "Hello, how are you?", likes: "100" },
@@ -26,4 +26,4 @@ let data = {
   },
 };
 
-export default data;
+export default state;
