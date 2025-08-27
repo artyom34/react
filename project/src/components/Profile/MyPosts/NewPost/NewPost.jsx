@@ -2,16 +2,16 @@ import React from "react";
 import classes from "./newPost.module.css";
 
 const NewPost = () => {
-  let addRef = React.createRef();
+  let createRef = React.createRef();
 
   let addPost = () => {
-    let text = addRef.current.value;
+    let text = createRef.current.value;
     alert(text);
   };
 
   return (
     <div className={classes.newPost}>
-      <textarea ref={addRef} placeholder="Write a new post..." />
+      <textarea ref={createRef} placeholder="Write a new post..." />
       <br />
       <button onClick={addPost} type="submit">
         Post
