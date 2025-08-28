@@ -26,4 +26,23 @@ let state = {
   },
 };
 
+export const addNewPost = (postMessage) => {
+  let newPost = {
+    id: state.postsData.posts.length + 1,
+    message: postMessage,
+    likes: 0,
+  };
+
+  state.postsData.posts.push(newPost);
+};
+
+export const addNewMessage = (messageText) => {
+  let newMessage = {
+    id: state.dialogsData.messages.length + 1,
+    message: messageText,
+  };
+
+  state.dialogsData.messages.push(newMessage);
+};
+
 export default state;

@@ -6,7 +6,8 @@ const Message = (props) => {
 
   let addMessage = () => {
     let text = createRef.current.value;
-    alert(text);
+
+    props.addNewMessage(text);
   };
 
   return (

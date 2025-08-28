@@ -1,12 +1,13 @@
 import React from "react";
 import classes from "./newPost.module.css";
 
-const NewPost = () => {
+const NewPost = (props) => {
   let createRef = React.createRef();
 
   let addPost = () => {
     let text = createRef.current.value;
-    alert(text);
+
+    props.addNewPost(text);
   };
 
   return (
