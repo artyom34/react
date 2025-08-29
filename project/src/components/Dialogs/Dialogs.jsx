@@ -8,11 +8,7 @@ const Dialogs = (props) => {
     <Dialog id={dialog.id} name={dialog.name} />
   ));
   let messagesInfo = props.dialogsData.messages.map((message) => (
-    <Message
-      id={message.id}
-      message={message.message}
-      addNewMessage={props.addNewMessage}
-    />
+    <Message id={message.id} message={message.message} />
   ));
 
   return (
